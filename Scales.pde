@@ -27,6 +27,7 @@ void scale(int x, int y) {
     diam++;
     c-=139/100.0;
   }
-  fill(31, 81, 255);
+  fill(0, 0, 0);
   triangle(x, y+30, x-30, y-30, x+30, y-30);
 }
+
