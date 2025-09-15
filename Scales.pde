@@ -4,7 +4,7 @@ void setup() {
 }
 void draw() {
   boolean shift = true;
-  for (int y = 500; y >= 0; y -= 50) {
+  for (int y = 500; y >= -20; y -= 25) {
     for (int x = 0; x <= 500; x += 100) {
       if (shift == true)
         scale(x+50, y);
@@ -27,4 +27,6 @@ void scale(int x, int y) {
     diam++;
     c-=139/100.0;
   }
+  fill(31, 81, 255);
+  triangle(x, y+30, x-30, y-30, x+30, y-30);
 }
